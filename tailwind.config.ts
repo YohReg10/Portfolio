@@ -55,7 +55,12 @@ const config: Config = {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
-  		}
+  		},
+        // Ajout de la famille de polices
+        fontFamily: {
+          sans: ['var(--font-geist-sans)'],
+		  caption: ['var(--font-caption)'],
+        }
   	}
   },
   plugins: [require("tailwindcss-animate")],
