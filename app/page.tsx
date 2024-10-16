@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main>
-      {/* Header */}
+      <h1>Wech ma ganache !</h1>
     </main>
   );
 }
