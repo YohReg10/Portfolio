@@ -1,16 +1,21 @@
-import { Button } from "@/components/ui/button";
-import { section as Section } from "./section";
+import { Button, buttonVariants } from "@/components/ui/button";
+import { Section } from "./section";
+import { GithubIcon } from "@/app/components/icons/GithubIcon";
+import Link from "next/link";
+import { cn } from "@/lib/utils";
 
-export const header = () => {
+export const Header = () => {
     return (
-        <header className="sticky top-0">
+        <header className="sticky top-0 py-4">
             <Section className="flex items-baseline">
-                <h1 className="text-4xl font-bold text-primary-foreground">
-                yohan.com
-                </h1>
-                <div className="flex-1"/>
+                <h1 className="text-lg font-bold text-primary-foreground">yohan.com</h1>
+                <div className="flex-1" />
                 <ul>
-                    <Button className="size-6"></Button>
+                    <Link 
+                    href="https://github.com/YohReg10"
+                    className={cn(buttonVariants({variant: "outline"}), "size-6 p-0")}>
+                        <GithubIcon size={12} className="text-foreground" />
+                    </Link>
                 </ul>
             </Section>
         </header>
