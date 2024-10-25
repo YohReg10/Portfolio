@@ -59,7 +59,9 @@
     --chart-5: 340 75% 55%;
   }
 }
-
+header {
+  background-color: #0a0a0a;
+}
 
   body {
     @apply bg-background text-foreground;
