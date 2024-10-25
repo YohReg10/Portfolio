@@ -14,15 +14,14 @@ export const Header = () => {
                 <ul className="flex items-center gap-2">
                     <Link 
                     href="https://github.com/YohReg10"
-                    className={cn(buttonVariants({variant: "outline"}), "size-6 p-0")}>
+                    className={cn(buttonVariants({ variant: "outline" }), "size-6 p-0 border border-[#d9b96d]")}>
                         <GithubIcon size={12} className="text-foreground" />
                     </Link>
                     <Link 
                     href="https://www.linkedin.com/feed/"
-                    className={cn(buttonVariants({variant: "outline"}), "size-6 p-0")}>
+                    className={cn(buttonVariants({ variant: "outline" }), "size-6 p-0 border border-[#d9b96d]")}> 
                         <Linkedin size={12} className="text-foreground" />
                     </Link>
-                    
                 </ul>
             </Section>
         </header>
