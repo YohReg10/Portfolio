@@ -3,9 +3,8 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { GeistSans } from "geist/font/sans";
 import { Junge } from "next/font/google";
-import { ThemeProvider } from  "./components/Theme-provider";
+import { ThemeProvider } from "./components/Theme-provider";
 import { ModeToggle } from "./components/ModeToggle";
- 
 
 // Police Local
 const geistSans = localFont({
@@ -26,20 +25,15 @@ export const metadata: Metadata = {
   description: "I am a student web developer! I'm using Symfony, Docker, PHP.",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode; }) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="h-full">
-      <ThemeProvider
-        attribute="class"
-        defaultTheme="system"
-        enableSystem
-        disableTransitionOnChange
-      >
-        <body className={`${geistSans.variable} ${junge.variable} font-sans h-full bg-background text-foreground`}>
+      <body className={`${geistSans.variable} ${junge.variable} font-sans h-full bg-background text-foreground`}>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <ModeToggle />
           {children}
-        </body>
-      </ThemeProvider>
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
