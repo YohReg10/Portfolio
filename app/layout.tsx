@@ -4,7 +4,7 @@ import "./globals.css";
 import { GeistSans } from "geist/font/sans";
 import { Junge } from "next/font/google";
 import { ThemeProvider } from "./components/Theme-provider";
-import { ModeToggle } from "./components/ModeToggle";
+
 
 // Police Local
 const geistSans = localFont({
@@ -30,7 +30,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className="h-full">
       <body className={`${geistSans.variable} ${junge.variable} font-sans h-full bg-background text-foreground`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          <ModeToggle />
           {children}
         </ThemeProvider>
       </body>

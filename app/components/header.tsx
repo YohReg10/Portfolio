@@ -1,9 +1,10 @@
-import { Button, buttonVariants } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/app/components/ui/button";
 import { Section } from "./section";
 import { GithubIcon } from "@/app/components/icons/GithubIcon";
 import { Linkedin } from "@/app/components/icons/LinkedinIcon";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { ModeToggle } from "./ModeToggle";
 
 export const Header = () => {
     return (
@@ -22,6 +23,7 @@ export const Header = () => {
                     className={cn(buttonVariants({ variant: "outline" }), "size-6 p-0 border border-[#d9b96d]")}> 
                         <Linkedin size={12} className="text-foreground" />
                     </Link>
+                    <ModeToggle />
                 </ul>
             </Section>
         </header>
