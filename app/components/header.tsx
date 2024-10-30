@@ -23,7 +23,7 @@ export const Header = () => {
                     className={cn(buttonVariants({ variant: "outline" }), "size-6 p-0 border border-[#d9b96d]")}> 
                         <Linkedin size={12} className="text-foreground" />
                     </Link>
-                    <ModeToggle />
+                    <ModeToggle className="size-8 p-0 border border-[#d9b96d]" />
                 </ul>
             </Section>
         </header>
