@@ -36,7 +36,7 @@ export const Header = () => {
       </Section>
 
       <div className="absolute top-4 right-6">
-        <ModeToggle className="size-8 p-0 border border-[#d9b96d]" />
+        <ModeToggle className="size-9 p-0 border border-[#d9b96d]" />
       </div>
     </header>
   );
