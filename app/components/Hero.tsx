@@ -27,7 +27,7 @@ export const Hero = () => {
             <div className="flex-1 max-lg:w-full mt-8 ml-8">
                 <img 
                     src="yohan_noir_blanc_bis2024.jpg"
-                    className="w-full h-auto rounded-3xl"
+                    className="w-full h-auto rounded-3xl border-2 border-[#e3ba59]"
                     alt="Yohan's portrait"
                     style={{ maxWidth: '70%', height: 'auto' }}
                 />
