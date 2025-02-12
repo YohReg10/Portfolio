@@ -1,5 +1,7 @@
+// Barre de navigation
+
 import { buttonVariants } from "@/app/components/ui/button";
-import { Section } from "./section";
+import { Section } from "./Section";
 import { GithubIcon } from "@/app/components/icons/GithubIcon";
 import { Linkedin } from "@/app/components/icons/LinkedinIcon";
 import Link from "next/link";
