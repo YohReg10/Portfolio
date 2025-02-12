@@ -37,7 +37,7 @@ export const Header = () => {
         </ul>
       </Section>
 
-      <div className="absolute top-4 right-6">
+      <div className="absolute top-3 right-6">
         <ModeToggle className="size-9 p-0 border border-[#d9b96d]" />
       </div>
     </header>
