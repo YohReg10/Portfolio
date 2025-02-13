@@ -1,13 +1,35 @@
-import { cn } from "@/lib/utils";
-import { PropsWithChildren } from "react";
+// Section Techno
 
-export const SectionTechno = (props: PropsWithChildren<{className?: string}>) => {
-  return (
-    <section className={cn("w-full px-4 m-auto", props.className)}>
-      {props.children}
-    </section>
-  );
-};
+import { Section } from "./Section";
 
+export const SectionTechno = () => {
+    return (
+        <Section className="flex flex-wrap gap-8 justify-between p-5 rounded-lg mt-20 mx-auto w-full">
+    <div className="card ">
+        <h3>React</h3>
+        <p>Blabla</p>
+    </div>
+    <div className="card ">
+        <h3>React</h3>
+        <p>Blabla</p>
+    </div>
+    <div className="card ">
+        <h3>React</h3>
+        <p>Blabla</p>
+    </div>
+    <div className="card ">
+        <h3>React</h3>
+        <p>Blabla</p>
+    </div>
+    <div className="card ">
+        <h3>React</h3>
+        <p>Blabla</p>
+    </div>
+    <div className="card ">
+        <h3>React</h3>
+        <p>Blabla</p>
+    </div>
+</Section>
 
-
+    )
+}
