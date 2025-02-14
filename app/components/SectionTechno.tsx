@@ -9,24 +9,19 @@ export const SectionTechno = () => {
                 <img src="react_img.svg" />
             </div>
             <div className="card ">
-                <h3>JavaScript</h3>
-                <p></p>
+                <img src="javascript_img.svg" /> 
             </div>
             <div className="card ">
-                <h3>MySQL</h3>
-                <p></p>
+                <img src="mysql_img.svg" style={{ marginTop: "-10px", width: "125px", height: "125px" }} />
             </div>
             <div className="card ">
-                <h3>Symfony</h3>
-                <p></p>
+                <img src="symfony_img.svg" />
             </div>
             <div className="card ">
-                <h3>Figma</h3>
-                <p></p>
+                <img src="figma_img.svg" />
             </div>
             <div className="card ">
-                <h3>Github</h3>
-                <p></p>
+                <img src="github_img.svg" />
             </div>
 </Section>
 
