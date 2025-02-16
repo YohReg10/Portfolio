@@ -5,23 +5,23 @@
 @layer base {
   :root {
     --background: hsl(46, 82%, 89%);
-    --foreground: hsl(0, 0%, 20%);    
+    --foreground: hsl(0, 0%, 20%);
     --card: hsl(0, 0%, 98%);
-    --card-foreground: hsl(0, 0%, 10%);    
+    --card-foreground: hsl(0, 0%, 10%);
     --popover: hsl(0, 0%, 98%);
-    --popover-foreground: hsl(0, 0%, 10%);    
-    --primary: hsl(40, 50%, 60%);
-    --primary-foreground: hsl(0, 0%, 98%);   
+    --popover-foreground: hsl(0, 0%, 10%);
+    --primary: hsl(45, 70%, 70%); /* Or clair */
+    --primary-foreground: hsl(0, 0%, 98%);
     --secondary: hsl(30, 64%, 79%);
-    --secondary-foreground: hsl(0, 0%, 10%);    
+    --secondary-foreground: hsl(0, 0%, 10%);
     --muted: hsl(0, 0%, 96%);
-    --muted-foreground: hsl(0, 0%, 45%);    
+    --muted-foreground: hsl(0, 0%, 45%);
     --accent: hsl(42, 71%, 55%);
-    --accent-foreground: hsl(0, 0%, 10%);    
+    --accent-foreground: hsl(0, 0%, 10%);
     --destructive: hsl(0, 84.2%, 55%);
-    --destructive-foreground: hsl(0, 0%, 98%);    
-    --border: hsl(0, 0%, 80%);
-    --input: hsl(0, 0%, 85%);    
+    --destructive-foreground: hsl(0, 0%, 98%);
+    --border: hsl(0, 0%, 20%);
+    --input: hsl(0, 0%, 85%);
     --ring: hsl(0, 0%, 10%);
     --radius: 0.5rem;
   }
@@ -51,41 +51,53 @@
 }
 
 .card {
-  width: 200px;               /* Taille de la carte */
-  height: 280px;              /* Hauteur pour un effet "carte à collectionner" */
-  border-radius: 20px;        /* Coins arrondis */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  /* Ombre pour le relief */
-  background: linear-gradient(145deg, #f8f9fa, #e0e0e0); /* Dégradé subtil */
-  border: 4px solid #d9b96d;  /* Bordure dorée (comme une carte rare) */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation */
+  width: 220px;
+  height: 300px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Ombre pour effet de profondeur */
+  background: linear-gradient(145deg, var(--primary), #fff6a1); /* Dégradé or clair */
+  border: 6px solid var(--border); /* Bordure métallique noire */
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 16px;
-  position: relative;
-  overflow: hidden;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  color: #fff;
 }
 
 .card:hover {
-  transform: scale(1.05);                     /* Légère augmentation de la taille */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);  /* Ombre plus marquée */
-  border-color: #ffd700;                      /* Bordure dorée brillante */
+  transform: scale(1.05); /* Légère augmentation de la taille au survol */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.6); /* Ombre plus marquée */
+  filter: brightness(1.3); /* Effet de brillance général */
 }
 
 .card img {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   object-fit: contain;
-  margin-top: 10px;
+  margin-top: 20px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); /* Effet lumineux autour de l'image */
 }
 
 .card-title {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: bold;
   text-transform: uppercase;
-  color: #333;
-  margin: 10px 0;
+  color: #fff;
+  margin: 20px 0;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.card-description {
+  font-size: 0.9rem;
+  text-align: center;
+  color: #e0e0e0;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 .card::before {
@@ -95,18 +107,18 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(130deg, rgba(255,255,255,0.2), rgba(0,0,0,0.1));
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.2)); /* Lumière centrale */
   mix-blend-mode: overlay;
   pointer-events: none;
-  animation: shimmer 2s infinite linear;
+  animation: shimmer 1.5s infinite linear;
   border-radius: 20px;
 }
 
 @keyframes shimmer {
   0% { transform: translateX(-100%); }
+  50% { transform: translateX(0); }
   100% { transform: translateX(100%); }
 }
-
 
 body {
   @apply bg-background text-foreground;
