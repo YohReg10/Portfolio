@@ -24,6 +24,12 @@
     --input: hsl(0, 0%, 85%);
     --ring: hsl(0, 0%, 10%);
     --radius: 0.5rem;
+
+    /* Propriétés spécifiques aux cards en mode clair */
+    --card-background: hsl(0, 0%, 98%); /* Fond de la carte en mode clair */
+    --card-border: hsl(0, 0%, 20%); /* Bordure noire métallique en mode clair */
+    --card-shadow: rgba(0, 0, 0, 0.4); /* Ombre pour la carte en mode clair */
+    --card-text: hsl(0, 0%, 10%); /* Texte sombre en mode clair */
   }
 
   .dark {
@@ -47,6 +53,12 @@
     --input: hsl(0, 0%, 14.9%);
     --ring: hsl(0, 0%, 83.1%);
     --radius: 0.5rem;
+
+    /* Propriétés spécifiques aux cards en mode sombre */
+    --card-background: hsl(0, 0%, 10%); /* Fond plus sombre en mode sombre */
+    --card-border: hsl(0, 0%, 80%); /* Bordure claire pour le mode sombre */
+    --card-shadow: rgba(255, 255, 255, 0.4); /* Ombre plus claire en mode sombre */
+    --card-text: hsl(0, 0%, 98%); /* Texte clair pour le mode sombre */
   }
 }
 
@@ -54,9 +66,9 @@
   width: 220px;
   height: 300px;
   border-radius: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Ombre pour effet de profondeur */
+  box-shadow: 0 4px 8px var(--card-shadow); /* Ombre de la carte, dynamique selon le thème */
   background: linear-gradient(145deg, var(--primary), #fff6a1); /* Dégradé or clair */
-  border: 6px solid var(--border); /* Bordure métallique noire */
+  border: 6px solid var(--card-border); /* Bordure dynamique */
   position: relative;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
@@ -66,7 +78,7 @@
   justify-content: space-between;
   padding: 20px;
   font-family: 'Arial', sans-serif;
-  color: #fff;
+  color: var(--card-text); /* Couleur du texte dynamique */
 }
 
 .card:hover {
