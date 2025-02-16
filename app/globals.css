@@ -3,62 +3,34 @@
 @tailwind utilities;
 
 @layer base {
+  /* Variables pour le mode clair */
   :root {
-    --background: hsl(46, 82%, 89%);
-    --foreground: hsl(0, 0%, 20%);
-    --card: hsl(0, 0%, 98%);
-    --card-foreground: hsl(0, 0%, 10%);
-    --popover: hsl(0, 0%, 98%);
-    --popover-foreground: hsl(0, 0%, 10%);
-    --primary: hsl(45, 70%, 70%); /* Or clair */
-    --primary-foreground: hsl(0, 0%, 98%);
-    --secondary: hsl(30, 64%, 79%);
-    --secondary-foreground: hsl(0, 0%, 10%);
-    --muted: hsl(0, 0%, 96%);
-    --muted-foreground: hsl(0, 0%, 45%);
-    --accent: hsl(42, 71%, 55%);
-    --accent-foreground: hsl(0, 0%, 10%);
-    --destructive: hsl(0, 84.2%, 55%);
-    --destructive-foreground: hsl(0, 0%, 98%);
-    --border: hsl(0, 0%, 20%);
-    --input: hsl(0, 0%, 85%);
-    --ring: hsl(0, 0%, 10%);
-    --radius: 0.5rem;
-
-    /* Propriétés spécifiques aux cards en mode clair */
-    --card-background: hsl(0, 0%, 98%); /* Fond de la carte en mode clair */
-    --card-border: hsl(0, 0%, 20%); /* Bordure noire métallique en mode clair */
-    --card-shadow: rgba(0, 0, 0, 0.4); /* Ombre pour la carte en mode clair */
-    --card-text: hsl(0, 0%, 10%); /* Texte sombre en mode clair */
+    --background: hsl(0, 0%, 10%); /* Fond très sombre en mode clair */
+    --foreground: hsl(0, 0%, 90%);
+    --card-background-start: #e0c8ff; /* Dégradé clair pour le mode clair */
+    --card-background-end: #9b7fd9;
+    --card-border: #ffd700; /* Bordure dorée pour le mode clair */
+    --card-shadow: rgba(0, 0, 0, 0.4); /* Ombre plus foncée pour le mode clair */
+    --card-text: #fff; /* Texte clair pour le mode clair */
+    --card-hover-shadow: rgba(0, 0, 0, 0.6); /* Ombre plus marquée au survol */
+    --card-image-shadow: rgba(255, 255, 255, 0.8); /* Effet lumineux autour de l'image */
+    --card-title-color: #fff; /* Couleur du titre en mode clair */
+    --card-description-color: #e0e0e0; /* Couleur de la description en mode clair */
   }
 
+  /* Variables pour le mode sombre */
   .dark {
     --background: hsl(0, 0%, 3.9%);
     --foreground: hsl(0, 0%, 98%);
-    --card: hsl(0, 0%, 3.9%);
-    --card-foreground: hsl(0, 0%, 98%);
-    --popover: hsl(0, 0%, 3.9%);
-    --popover-foreground: hsl(0, 0%, 98%);
-    --primary: hsl(0, 0%, 98%);
-    --primary-foreground: hsl(0, 0%, 9%);
-    --secondary: hsl(0, 0%, 14.9%);
-    --secondary-foreground: hsl(0, 0%, 98%);
-    --muted: hsl(0, 0%, 14.9%);
-    --muted-foreground: hsl(0, 0%, 63.9%);
-    --accent: hsl(0, 0%, 14.9%);
-    --accent-foreground: hsl(0, 0%, 98%);
-    --destructive: hsl(0, 62.8%, 30.6%);
-    --destructive-foreground: hsl(0, 0%, 98%);
-    --border: hsl(0, 0%, 14.9%);
-    --input: hsl(0, 0%, 14.9%);
-    --ring: hsl(0, 0%, 83.1%);
-    --radius: 0.5rem;
-
-    /* Propriétés spécifiques aux cards en mode sombre */
-    --card-background: hsl(0, 0%, 10%); /* Fond plus sombre en mode sombre */
-    --card-border: hsl(0, 0%, 80%); /* Bordure claire pour le mode sombre */
-    --card-shadow: rgba(255, 255, 255, 0.4); /* Ombre plus claire en mode sombre */
-    --card-text: hsl(0, 0%, 98%); /* Texte clair pour le mode sombre */
+    --card-background-start: #3a1e8e; /* Dégradé foncé pour le mode sombre */
+    --card-background-end: #1e0737;
+    --card-border: #ffd700; /* Bordure dorée pour le mode sombre */
+    --card-shadow: rgba(255, 255, 255, 0.4); /* Ombre plus claire pour le mode sombre */
+    --card-text: #fff; /* Texte clair pour le mode sombre */
+    --card-hover-shadow: rgba(255, 255, 255, 0.6); /* Ombre plus marquée au survol */
+    --card-image-shadow: rgba(255, 255, 255, 0.8); /* Effet lumineux autour de l'image */
+    --card-title-color: #fff; /* Couleur du titre en mode sombre */
+    --card-description-color: #e0e0e0; /* Couleur de la description en mode sombre */
   }
 }
 
@@ -66,8 +38,8 @@
   width: 220px;
   height: 300px;
   border-radius: 20px;
-  box-shadow: 0 4px 8px var(--card-shadow); /* Ombre de la carte, dynamique selon le thème */
-  background: linear-gradient(145deg, var(--primary), #fff6a1); /* Dégradé or clair */
+  box-shadow: 0 4px 8px var(--card-shadow); /* Ombre dynamique en fonction du thème */
+  background: linear-gradient(145deg, var(--card-background-start), var(--card-background-end)); /* Dégradé dynamique */
   border: 6px solid var(--card-border); /* Bordure dynamique */
   position: relative;
   overflow: hidden;
@@ -83,7 +55,7 @@
 
 .card:hover {
   transform: scale(1.05); /* Légère augmentation de la taille au survol */
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.6); /* Ombre plus marquée */
+  box-shadow: 0 12px 20px var(--card-hover-shadow); /* Ombre plus marquée au survol */
   filter: brightness(1.3); /* Effet de brillance général */
 }
 
@@ -93,14 +65,14 @@
   object-fit: contain;
   margin-top: 20px;
   border-radius: 50%;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); /* Effet lumineux autour de l'image */
+  box-shadow: 0 0 15px var(--card-image-shadow); /* Effet lumineux autour de l'image */
 }
 
 .card-title {
   font-size: 1.4rem;
   font-weight: bold;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--card-title-color);
   margin: 20px 0;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.5);
 }
@@ -108,7 +80,7 @@
 .card-description {
   font-size: 0.9rem;
   text-align: center;
-  color: #e0e0e0;
+  color: var(--card-description-color);
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
@@ -119,16 +91,15 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.2)); /* Lumière centrale */
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.1)); /* Lumière centrale */
   mix-blend-mode: overlay;
   pointer-events: none;
-  animation: shimmer 1.5s infinite linear;
+  animation: shimmer 2s infinite linear;
   border-radius: 20px;
 }
 
 @keyframes shimmer {
   0% { transform: translateX(-100%); }
-  50% { transform: translateX(0); }
   100% { transform: translateX(100%); }
 }
 
