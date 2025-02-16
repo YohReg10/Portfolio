@@ -35,8 +35,5 @@ export const Hero = () => {
         />
     </div>
 </Section>
-
-
-
     );
 };
