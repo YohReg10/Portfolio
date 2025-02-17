@@ -26,10 +26,10 @@ export const Hero = () => {
         </ul>
         <span className="italic mt-4 block text-[#e3ba59] dark:text-[#d9b96d]" > "When you think you can't, try once more."</span> - Japanese proverb 🍀
     </div>
-    <div className="flex-1 ml-[25em] max-lg:w-full mt-0">
+    <div className="flex-1 mt-0">
         <img 
             src="yohan_noir_blanc_bis2024.jpg"
-            className="w-full h-auto rounded-3xl border-2 border-[#e3ba59]"
+            className="w-[70%] h-auto rounded-3xl border-2 border-[#e3ba59] mx-auto"
             alt="Yohan's portrait"
             style={{ maxWidth: '90%', height: 'auto' }}
         />
