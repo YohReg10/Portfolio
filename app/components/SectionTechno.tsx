@@ -2,7 +2,7 @@ import { Section } from "./Section";
 
 export const SectionTechno = () => {
     return (
-        <Section className="flex flex-wrap gap-8 justify-between p-5 rounded-lg mt-32 mx-auto w-full">
+        <Section className="flex flex-wrap gap-8 justify-between p-5 rounded-lg mt-32 mx-auto w-[92%]">
             <div className="card flex flex-col items-center">
                 <img src="react_img.svg" alt="Logo React" />
                 <h3 className="font-caption text-[20px] dark:text-[#f5f5dc] mb-0">React/NextJS</h3>
