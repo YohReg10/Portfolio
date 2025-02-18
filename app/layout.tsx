@@ -1,4 +1,4 @@
-//  Layout = Partie Serveur
+//  Layout = Partie Serveur côté client et structure de l'appli
 
 import type { Metadata } from "next";
 import localFont from "next/font/local";

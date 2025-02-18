@@ -1,5 +1,7 @@
+// Barre de navigation
+
 import { buttonVariants } from "@/app/components/ui/button";
-import { Section } from "./section";
+import { Section } from "./Section";
 import { GithubIcon } from "@/app/components/icons/GithubIcon";
 import { Linkedin } from "@/app/components/icons/LinkedinIcon";
 import Link from "next/link";
@@ -35,7 +37,7 @@ export const Header = () => {
         </ul>
       </Section>
 
-      <div className="absolute top-4 right-6">
+      <div className="absolute top-3 right-6">
         <ModeToggle className="size-9 p-0 border border-[#d9b96d]" />
       </div>
     </header>
