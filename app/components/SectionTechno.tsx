@@ -11,7 +11,7 @@ const listTechno = [
 
 export const SectionTechno = () => {
     return (
-        <Section className="flex flex-wrap lg:flex-nowrap gap-8 justify-between p-5 rounded-lg mt-32 mx-auto w-[92%]">
+        <Section className="flex flex-wrap lg:flex-nowrap gap-8 justify-between p-5 rounded-lg mt-32 mx-auto w-[92.5%]">
             {listTechno.map((techno) => (
                 <div key={techno.name} className="card flex flex-col items-center">
                     <img src={techno.imgSrc} alt={techno.alt} />
