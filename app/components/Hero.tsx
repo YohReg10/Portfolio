@@ -12,7 +12,7 @@ export const Hero = () => {
 
         <p className="font-serif text-lg leading-relaxed mb-4 text-justify text-[#333333] dark:text-[#e0e0e0]">
             My name is Yohan Regad👽 <br />
-            I am a development student who has completed my training and is looking for an internship to further enhance my skills. <br />
+            I am a development student who has completed my training and is looking for an internship to further enhance my skills.<br />
             I specialize in back-end development because managing and manipulating data is what excites me the most!<br />
             I am curious, determined, and a sunny person who loves to joke every day! 😄<br />
             I consider myself a challenger because I love taking on challenges. That’s why I am always seeking new perspectives through stimulating and enriching projects. 💪 
