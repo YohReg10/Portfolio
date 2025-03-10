@@ -10,7 +10,7 @@ export const SectionProjects = () => {
                     <img
                         src="Portfolio-Desk-620x410.jpg"
                         alt="Yohan's portfolio preview"
-                        className="h-auto rounded-3xl mx-auto w-[100%] ml-0 hover:opacity-90 transition-opacity"
+                        className="h-auto rounded-3xl border-2 border-[#e3ba59] mx-auto w-[100%] ml-0 hover:opacity-90 transition-opacity"
                         loading="lazy"
                     />
                     {/* Span avec le lien autour du texte */}
