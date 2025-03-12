@@ -1,3 +1,5 @@
+// Page d'accueil
+
 import { Header } from "./components/header";
 import { Hero } from "./components/Hero";
 import { Spacing } from "./components/Spacing";
