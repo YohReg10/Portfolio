@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Section } from "./Section";
 
 const listProjects = [
@@ -82,9 +83,9 @@ export const SectionProjects = () => {
             ))} 
 
         <div className="text-center mt-8">
-            <a href="/more-projects" className="inline-block bg-[#F1C40F] text-[#2C3E50] px-6 py-3 rounded-md text-lg font-medium hover:bg-[#e3ba59] transition-all">
+            <Link href="/more-projects" className="inline-block bg-[#F1C40F] text-[#2C3E50] px-6 py-3 rounded-md text-lg font-medium hover:bg-[#e3ba59] transition-all">
                 View More
-            </a>
+            </Link>
         </div>
     
            
