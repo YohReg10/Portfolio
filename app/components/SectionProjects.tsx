@@ -60,9 +60,9 @@ export const SectionProjects = () => {
                                 href={projects.href}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-block bg-[#F1C40F] text-[#2C3E50] w-full text-center px-4 py-2 rounded-3xl text-sm font-serif absolute bottom-0 left-0 transition-colors"
+                                className="inline-block bg-[#e3ba59] text-[#333333] dark:text-[#f5f5dc] w-full text-center px-4 py-2 rounded-3xl text-xl font-serif absolute bottom-0 left-0 transition-colors"
                             >
-                                👀 View Project
+                                👀 View Github
                             </a> 
                         </div>               
                     </div>
@@ -83,7 +83,7 @@ export const SectionProjects = () => {
             ))} 
 
         <div className="text-center mt-8">
-            <Link href="/more-projects" className="inline-block bg-[#F1C40F] text-[#2C3E50] px-6 py-3 rounded-md text-lg font-medium hover:bg-[#e3ba59] transition-all">
+            <Link href="/more-projects" className="inline-block text-[#333333] dark:text-[#f5f5dc] bg-[#e3ba59] px-6 py-3 rounded-md text-lg font-medium hover:bg-[#e3ba59] transition-all">
                 View More
             </Link>
         </div>

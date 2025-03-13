@@ -10,7 +10,7 @@ export const Hero = () => {
                 <h2 className="font-caption text-3xl font-bold dark:text-[#f5f5dc]">Student Web Developer</h2>
                 <h3 className="font-caption text-xl font-bold text-[#e3ba59] dark:text-[#d9b96d]">Who I am?</h3>
 
-                <p className="font-serif text-lg leading-relaxed mb-4 text-justify text-[#333333] dark:text-[#e0e0e0]">
+                <p className="font-serif text-lg leading-relaxed mb-4 text-justify text-[#333333] dark:text-[#f5f5dc]">
                     My name is Yohan Regad 👽 <br />
                     I am a development student who has completed my training and is looking for an internship to further enhance my skills.<br />
                     I specialize in back-end development because managing and manipulating data is what excites me the most!<br />
