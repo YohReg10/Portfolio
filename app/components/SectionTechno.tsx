@@ -11,21 +11,29 @@ const listTechno = [
 
 export const SectionTechno = () => {
     return (
-        <Section className="flex flex-wrap lg:flex-nowrap gap-8 justify-between p-5 rounded-lg mt-32 mx-auto w-[92.5%]">
-            {listTechno.map((techno) => (
-                <div key={techno.name} className="card flex flex-col items-center">
-                    <img src={techno.imgSrc} alt={techno.alt} />
-                    <h3 className="font-caption text-[20px] dark:text-[#f5f5dc] mb-0">{techno.name}</h3>
-                    <p className="font-caption text-[18px] dark:text[#f5f5dc]- mb-0">Projets réalisés :</p>
+        <Section className="flex flex-wrap gap-8 p-5 rounded-lg mt-32 mx-auto w-[92.5%] justify-center">
+            <div className="w-full text-center">
+                <h1 className="font-serif text-4xl font-bold text-[#e3ba59] dark:text-[#d9b96d] mb-20">
+                    My Technologies
+                </h1>
+            </div>
+            
+            <div className="w-full flex flex-wrap justify-between gap-8">
+        {listTechno.map((techno) => (
+            <div key={techno.name} className="card flex flex-col items-center w-[15%] min-w-[150px]">
+                <img src={techno.imgSrc} alt={techno.alt} className="w-20 h-20" />
+                <h3 className="font-caption text-[20px] dark:text-[#f5f5dc] mb-0">{techno.name}</h3>
+                <p className="font-caption text-[18px] dark:text-[#f5f5dc] mb-0">Projets réalisés :</p>
 
-                    {/* Cercles de compétence */}
-                    <div className="flex gap-2 mb-0">
+                {/* Cercles de compétence */}
+                <div className="flex gap-2 mb-0">
                     {Array.from({ length: 8 }).map((_, i) => (
                         <div key={i} className={`h-3 w-3 rounded-full ${i < techno.cercles ? "bg-[#e3ba59]" : "bg-gray-700"}`}></div>
                     ))}
-                    </div>
                 </div>
-            ))}                
+            </div>
+            ))}
+            </div>
         </Section>
     )
 }

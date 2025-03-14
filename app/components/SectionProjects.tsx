@@ -40,6 +40,10 @@ const listProjects = [
 export const SectionProjects = () => {
     return (
         <Section className="flex flex-col gap-12 p-5 rounded-lg mt-32 mx-auto w-[92%]">
+            <h1 className=" font-serif text-4xl font-bold text-center text-[#e3ba59] dark:text-[#d9b96d] mb-20">
+                My Projects
+            </h1>
+
             {listProjects.map((projects) => (
                 <div key={projects.href} className="flex flex-row items-center gap-8">
 
@@ -60,9 +64,9 @@ export const SectionProjects = () => {
                                 href={projects.href}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-block bg-[#F1C40F] text-[#2C3E50] w-full text-center px-4 py-2 rounded-3xl text-sm font-serif absolute bottom-0 left-0 transition-colors"
+                                className="inline-block bg-[#e3ba59] text-[#333333] dark:text-[#f5f5dc] w-full text-center px-4 py-2 rounded-3xl text-xl font-serif absolute bottom-0 left-0 transition-colors"
                             >
-                                👀 View Project
+                                👀 View Github
                             </a> 
                         </div>               
                     </div>
@@ -83,7 +87,7 @@ export const SectionProjects = () => {
             ))} 
 
         <div className="text-center mt-8">
-            <Link href="/more-projects" className="inline-block bg-[#F1C40F] text-[#2C3E50] px-6 py-3 rounded-md text-lg font-medium hover:bg-[#e3ba59] transition-all">
+            <Link href="/more-projects" className="inline-block text-[#333333] dark:text-[#f5f5dc] bg-[#e3ba59] px-6 py-3 rounded-md text-lg font-medium hover:bg-[#e3ba59] transition-all">
                 View More
             </Link>
         </div>
