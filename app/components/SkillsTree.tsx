@@ -6,13 +6,13 @@ export const SkillsTree = () => {
       <div className="relative">
         
         {/* Racine */}
-        <div className="w-6 h-6 bg-white rounded-full border-4 border-gray-700 mt-60"></div>
+        <div className="w-6 h-6 rounded-full border-4 border-[#d9b96d] bg-[hsl(0,0%,100%)] dark:bg-[hsl(0,0%,3.9%)] mt-60"></div>        
         
         {/* Ligne verticale */}
-        <div className="absolute left-1/2 top-full h-[660px] w-1 bg-gray-700 transform -translate-x-1/2"></div>
+        <div className="absolute left-1/2 top-full h-[660px] w-1 bg-gradient-to-b from-[#d9b96d] to-[#8c6b30] transform -translate-x-1/2"></div>
 
         {/* Branche attachée à la ligne verticale 1 */}
-        <div className="absolute left-1/2 top-[120px] w-[100px] h-1 bg-gray-700 transform -translate-x-1/2 -translate-x-[100px] mt-[240px]">
+        <div className="absolute left-1/2 top-[120px] w-[100px] h-1 bg-gradient-to-l from-[#d9b96d] to-[#8c6b30] transform -translate-x-1/2 -translate-x-[100px] mt-[240px]">
           
           {/* Boîte de dialogue attachée à la branche 1 */}
             <div className="absolute left-1/2 top-[-50px] w-[200px] bg-gray-300 text-black p-4 transform -translate-x-1/2 -translate-x-[250px] shadow-lg">
@@ -23,14 +23,35 @@ export const SkillsTree = () => {
         </div>
 
         {/* Branche attachée à la ligne verticale 2 */}
-        <div className="absolute left-1/2 top-[200px] w-[100px] h-1 bg-gray-700 transform -translate-x-1/2 -translate-x-[0px] mt-[240px]"></div>
+        <div className="absolute left-1/2 top-[200px] w-[100px] h-1 bg-gradient-to-r from-[#d9b96d] to-[#8c6b30] transform -translate-x-1/2 -translate-x-[0px] mt-[240px]">
+        
+        {/* Boîte de dialogue attachée à la branche 2 */}        
+            <div className="absolute left-1/2 top-[-70px] w-[200px] bg-gray-300 text-black p-4 transform -translate-x-1/2 -translate-x-[-50px] shadow-lg">
+                <p className="whitespace-normal break-words">
+                mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmssssssssssssssssssssssssssssssssssssssssssss
+                </p>
+            </div>
+        </div>
 
         {/* Branche attachée à la ligne verticale 3 */}
-        <div className="absolute left-1/2 top-[400px] w-[100px] h-1 bg-gray-700 transform -translate-x-1/2 -translate-x-[100px] mt-[240px]"></div>
+        <div className="absolute left-1/2 top-[400px] w-[100px] h-1 bg-gradient-to-l from-[#d9b96d] to-[#8c6b30] transform -translate-x-1/2 -translate-x-[100px] mt-[240px]">
+            {/* Boîte de dialogue attachée à la branche 3 */}
+            <div className="absolute left-1/2 top-[-50px] w-[200px] bg-gray-300 text-black p-4 transform -translate-x-1/2 -translate-x-[250px] shadow-lg">
+            <p className="whitespace-normal break-words">
+                mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmssssssssssssssssssssssssssssssssssssssssssss
+            </p>
+            </div>
+        </div>
 
         {/* Branche attachée à la ligne verticale 4 */}
-        <div className="absolute left-1/2 top-[480px] w-[100px] h-1 bg-gray-700 transform -translate-x-1/2 -translate-x-[0px] mt-[240px]"></div>
-        
+        <div className="absolute left-1/2 top-[480px] w-[100px] h-1 bg-gradient-to-r from-[#d9b96d] to-[#8c6b30] transform -translate-x-1/2 -translate-x-[0px] mt-[240px]">
+            {/* Boîte de dialogue attachée à la branche 4 */}        
+            <div className="absolute left-1/2 top-[-70px] w-[200px] bg-gray-300 text-black p-4 transform -translate-x-1/2 -translate-x-[-50px] shadow-lg">
+                <p className="whitespace-normal break-words">
+                mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmssssssssssssssssssssssssssssssssssssssssssss
+                </p>
+            </div>
+        </div>        
       </div>
     </div>
   );

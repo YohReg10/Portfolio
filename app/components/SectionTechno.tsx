@@ -1,4 +1,4 @@
-import { Section } from "./Section";
+import { Section } from "./section";
 
 const listTechno = [
     {imgSrc : "react_img.svg", alt : "Logo React", name : "React", cercles : 3},
