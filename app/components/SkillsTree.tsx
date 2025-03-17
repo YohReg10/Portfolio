@@ -15,8 +15,8 @@ export const SkillsTree = () => {
         <div className="absolute left-1/2 top-[120px] w-[100px] h-1 bg-gradient-to-l from-[#d9b96d] to-[#8c6b30] transform -translate-x-1/2 -translate-x-[100px] mt-[240px]">
           
           {/* Boîte de dialogue attachée à la branche 1 */}
-            <div className="absolute left-1/2 top-[-50px] w-[200px] bg-gray-300 text-black p-4 transform -translate-x-1/2 -translate-x-[250px] shadow-lg">
-            <p className="whitespace-normal break-words">
+          <div className="absolute left-1/2 top-[-50px] w-[200px] text-black p-4 transform -translate-x-1/2 -translate-x-[250px] shadow-lg border-4 border-[#d9b96d] rounded-md">
+            <p className="whitespace-normal break-words text-[#333333] dark:text-[#e0e0e0]">
                 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmssssssssssssssssssssssssssssssssssssssssssss
             </p>
             </div>
@@ -26,8 +26,8 @@ export const SkillsTree = () => {
         <div className="absolute left-1/2 top-[200px] w-[100px] h-1 bg-gradient-to-r from-[#d9b96d] to-[#8c6b30] transform -translate-x-1/2 -translate-x-[0px] mt-[240px]">
         
         {/* Boîte de dialogue attachée à la branche 2 */}        
-            <div className="absolute left-1/2 top-[-70px] w-[200px] bg-gray-300 text-black p-4 transform -translate-x-1/2 -translate-x-[-50px] shadow-lg">
-                <p className="whitespace-normal break-words">
+            <div className="absolute left-1/2 top-[-70px] w-[200px] text-black p-4 transform -translate-x-1/2 -translate-x-[-50px] shadow-lg border-4 border-[#d9b96d] rounded-md">
+                <p className="whitespace-normal break-words text-[#333333] dark:text-[#e0e0e0]">
                 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmssssssssssssssssssssssssssssssssssssssssssss
                 </p>
             </div>
@@ -36,8 +36,8 @@ export const SkillsTree = () => {
         {/* Branche attachée à la ligne verticale 3 */}
         <div className="absolute left-1/2 top-[400px] w-[100px] h-1 bg-gradient-to-l from-[#d9b96d] to-[#8c6b30] transform -translate-x-1/2 -translate-x-[100px] mt-[240px]">
             {/* Boîte de dialogue attachée à la branche 3 */}
-            <div className="absolute left-1/2 top-[-50px] w-[200px] bg-gray-300 text-black p-4 transform -translate-x-1/2 -translate-x-[250px] shadow-lg">
-            <p className="whitespace-normal break-words">
+            <div className="absolute left-1/2 top-[-50px] w-[200px] text-black p-4 transform -translate-x-1/2 -translate-x-[250px] shadow-lg border-4 border-[#d9b96d] rounded-md">
+            <p className="whitespace-normal break-words text-[#333333] dark:text-[#e0e0e0]">
                 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmssssssssssssssssssssssssssssssssssssssssssss
             </p>
             </div>
@@ -46,8 +46,8 @@ export const SkillsTree = () => {
         {/* Branche attachée à la ligne verticale 4 */}
         <div className="absolute left-1/2 top-[480px] w-[100px] h-1 bg-gradient-to-r from-[#d9b96d] to-[#8c6b30] transform -translate-x-1/2 -translate-x-[0px] mt-[240px]">
             {/* Boîte de dialogue attachée à la branche 4 */}        
-            <div className="absolute left-1/2 top-[-70px] w-[200px] bg-gray-300 text-black p-4 transform -translate-x-1/2 -translate-x-[-50px] shadow-lg">
-                <p className="whitespace-normal break-words">
+            <div className="absolute left-1/2 top-[-70px] w-[200px] text-black p-4 transform -translate-x-1/2 -translate-x-[-50px] shadow-lg border-4 border-[#d9b96d] rounded-md">
+                <p className="whitespace-normal break-words text-[#333333] dark:text-[#e0e0e0]">
                 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmssssssssssssssssssssssssssssssssssssssssssss
                 </p>
             </div>
