@@ -1,57 +1,55 @@
 import React from 'react';
+import '../tree.css';
 
 export const SkillsTree = () => {
   return (
-    <div className="w-full px-4 m-auto flex justify-center items-start h-auto">
-      <div className="relative">
-        
+    <div className="skillsTreeWrapper">
+      <div className="skillsTreeContainer">
         {/* Racine */}
-        <div className="w-6 h-6 rounded-full border-4 border-[#d9b96d] bg-[hsl(0,0%,100%)] dark:bg-[hsl(0,0%,3.9%)] mt-60"></div>        
-        
+        <div className="skillsRoot"></div>
+
         {/* Ligne verticale */}
-        <div className="absolute left-1/2 top-full h-[660px] w-1 bg-gradient-to-b from-[#d9b96d] to-[#8c6b30] transform -translate-x-1/2"></div>
+        <div className="skillsVerticalLine"></div>
 
-        {/* Branche attachée à la ligne verticale 1 */}
-        <div className="absolute left-1/2 top-[120px] w-[100px] h-1 bg-gradient-to-l from-[#d9b96d] to-[#8c6b30] transform -translate-x-1/2 -translate-x-[100px] mt-[240px]">
-          
-          {/* Boîte de dialogue attachée à la branche 1 */}
-          <div className="absolute left-1/2 top-[-50px] w-[200px] text-black p-4 transform -translate-x-1/2 -translate-x-[250px] shadow-lg border-4 border-[#d9b96d] rounded-md">
-            <p className="whitespace-normal break-words text-[#333333] dark:text-[#e0e0e0]">
-                mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmssssssssssssssssssssssssssssssssssssssssssss
+        {/* Branche 1 + boîte */}
+        <div className="skillsBranchLeft1">
+          <div className="skillsBoxLeft1">
+            <h3>Introductie call</h3>
+            <p className="skillsBoxText">
+              Persoonlijk contact is voor ons super belangrijk, daarom willen we graag kennis met je maken. Op deze manier begrijpen we nog beter wie jij bent en hoe we je kunnen bereiken.
             </p>
-            </div>
+          </div>
         </div>
 
-        {/* Branche attachée à la ligne verticale 2 */}
-        <div className="absolute left-1/2 top-[200px] w-[100px] h-1 bg-gradient-to-r from-[#d9b96d] to-[#8c6b30] transform -translate-x-1/2 -translate-x-[0px] mt-[240px]">
-        
-        {/* Boîte de dialogue attachée à la branche 2 */}        
-            <div className="absolute left-1/2 top-[-70px] w-[200px] text-black p-4 transform -translate-x-1/2 -translate-x-[-50px] shadow-lg border-4 border-[#d9b96d] rounded-md">
-                <p className="whitespace-normal break-words text-[#333333] dark:text-[#e0e0e0]">
-                mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmssssssssssssssssssssssssssssssssssssssssssss
-                </p>
-            </div>
-        </div>
-
-        {/* Branche attachée à la ligne verticale 3 */}
-        <div className="absolute left-1/2 top-[400px] w-[100px] h-1 bg-gradient-to-l from-[#d9b96d] to-[#8c6b30] transform -translate-x-1/2 -translate-x-[100px] mt-[240px]">
-            {/* Boîte de dialogue attachée à la branche 3 */}
-            <div className="absolute left-1/2 top-[-50px] w-[200px] text-black p-4 transform -translate-x-1/2 -translate-x-[250px] shadow-lg border-4 border-[#d9b96d] rounded-md">
-            <p className="whitespace-normal break-words text-[#333333] dark:text-[#e0e0e0]">
-                mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmssssssssssssssssssssssssssssssssssssssssssss
+        {/* Branche 2 + boîte */}
+        <div className="skillsBranchRight1">
+          <div className="skillsBoxRight1">
+            <h3>Doelgroep</h3>
+            <p className="skillsBoxText">
+              We begrijpen dat het soms moeilijk is om je doelgroep te bepalen, hierbij kunnen wij je natuurlijk helpen. Samen gaan we onderzoeken waar jouw doelgroep zich op Instagram bevindt en hoe we dit de meest effectieve manier kunnen bereiken.
             </p>
-            </div>
+          </div>
         </div>
 
-        {/* Branche attachée à la ligne verticale 4 */}
-        <div className="absolute left-1/2 top-[480px] w-[100px] h-1 bg-gradient-to-r from-[#d9b96d] to-[#8c6b30] transform -translate-x-1/2 -translate-x-[0px] mt-[240px]">
-            {/* Boîte de dialogue attachée à la branche 4 */}        
-            <div className="absolute left-1/2 top-[-70px] w-[200px] text-black p-4 transform -translate-x-1/2 -translate-x-[-50px] shadow-lg border-4 border-[#d9b96d] rounded-md">
-                <p className="whitespace-normal break-words text-[#333333] dark:text-[#e0e0e0]">
-                mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmssssssssssssssssssssssssssssssssssssssssssss
-                </p>
-            </div>
-        </div>        
+        {/* Branche 3 + boîte */}
+        <div className="skillsBranchLeft2">
+          <div className="skillsBoxLeft2">
+            <h3>Interactie</h3>
+            <p className="skillsBoxText">
+              Zodra je doelgroep helder is, starten we met de interactie. We zorgen voor dagelijkse likes op de laatste stories zodat je niet alleen opvalt, maar ook echt groot wordt.
+            </p>
+          </div>
+        </div>
+
+        {/* Branche 4 + boîte */}
+        <div className="skillsBranchRight2">
+          <div className="skillsBoxRight2">
+            <h3>Optimalisatie</h3>
+            <p className="skillsBoxText">
+              Ook al weten we waar je doelgroep zich bevindt, streven we altijd naar verbetering. Door analytisch naar de resultaten te kijken, optimaliseren we onze aanpak voor nog meer effectiviteit en meer volgers.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
