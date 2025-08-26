@@ -41,7 +41,7 @@ export const SectionProjects = () => {
     return (
         <Section className="flex flex-col gap-12 p-5 rounded-lg mt-32 mx-auto w-[92%]">
             <h1 className=" font-serif text-4xl font-bold text-center text-[#e3ba59] dark:text-[#d9b96d] mb-20">
-                My Projects
+            My Projects
             </h1>
 
             {listProjects.map((projects) => (
@@ -84,15 +84,12 @@ export const SectionProjects = () => {
                     </div>         
                 </div>               
                 
-            ))} 
-
-        <div className="text-center mt-8">
-            <Link href="/more-projects" className="inline-block text-[#333333] dark:text-[#f5f5dc] bg-[#e3ba59] px-6 py-3 rounded-md text-lg font-medium hover:bg-[#e3ba59] transition-all">
-                View More
-            </Link>
-        </div>
-    
-           
+            ))}
+            <div className="text-center mt-8">
+                <Link href="/more-projects" className="inline-block text-[#333333] dark:text-[#f5f5dc] bg-[#e3ba59] px-6 py-3 rounded-md text-lg font-medium hover:bg-[#e3ba59] transition-all">
+                    View More
+                </Link>
+            </div>
         </Section>
     );
 };
