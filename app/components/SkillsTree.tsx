@@ -19,10 +19,14 @@ export const SkillsTree = () => {
 
           {/* Branche 1 + boîte */}
           <div className="skillsBranchLeft1">
-            <div className="skillsBoxLeft1">
+            <div className="skillsBoxLeft1 
+              bg-gradient-to-br from-[#fdf8ef] to-[#f3e2b3] 
+              dark:from-[#1e1e1e] dark:to-[#3b2e1a] 
+              border-4 border-[#d9b96d] text-[#333333] dark:text-[#e0e0e0]">
+                
               {/* Header = icône + titre sur une ligne */}
               <div className="skillsBoxHeader">
-                <div className="skillsBoxIcon">
+                <div className="skillsBoxIcon bg-gradient-to-r from-[#f3e2b3] to-[#d9b96d] dark:from-[#d9b96d] dark:to-[#8c6b30]">
                   <img src="monitor-svgrepo-com.svg" alt="Front-end icon" />
                 </div>
                 <h3 className="skillsBoxTitle">Front-end & UI</h3>
