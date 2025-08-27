@@ -12,33 +12,35 @@ export const SkillsTree = () => {
       <div className="skillsTreeWrapper">
         <div className="skillsTreeContainer">
           {/* Racine */}
-          <div className="skillsRoot"></div>
+          <div className="skillsRoot" />
 
           {/* Ligne verticale */}
-          <div className="skillsVerticalLine"></div>
+          <div className="skillsVerticalLine" />
 
           {/* Branche 1 + boîte */}
           <div className="skillsBranchLeft1">
             <div className="skillsBoxLeft1">
-              {/* Zone logo */}
-              <div className="skillsBoxIcon">
-                <img src="/icons/frontend.svg" alt="Front-end icon" />
+              {/* Header = icône + titre sur une ligne */}
+              <div className="skillsBoxHeader">
+                <div className="skillsBoxIcon">
+                  <img src="monitor-svgrepo-com.svg" alt="Front-end icon" />
+                </div>
+                <h3 className="skillsBoxTitle">Front-end & UI</h3>
               </div>
 
-              <h3>Front-end & UI</h3>
-              <p className="skillsBoxText">
+              <p className="skillsBoxText font-serif text-xl tracking-tight mb-4 text-justify text-[#333333] dark:text-[#e0e0e0]">
                 Je conçois des interfaces modernes avec React et Next.js, en mettant l'accent sur un design responsive et fluide.
                 Les animations et l'accessibilité font partie de mes priorités pour offrir une expérience utilisateur claire et agréable.
               </p>
             </div>
           </div>
-
+            
           {/* Branche 2 + boîte */}
           <div className="skillsBranchRight1">
             <div className="skillsBoxRight1">
               {/* Zone logo */}
               <div className="skillsBoxIcon">
-                <img src="/icons/backend.svg" alt="Back-end icon" />
+                <img src="database-svgrepo-com.svg" alt="Back-end icon" />
               </div>
 
               <h3>Back-end & Data</h3>
@@ -54,7 +56,7 @@ export const SkillsTree = () => {
             <div className="skillsBoxLeft2">
               {/* Zone logo */}
               <div className="skillsBoxIcon">
-                <img src="/icons/cube.svg" alt="3D icon" />
+                <img src="cube-1-svgrepo-com.svg" alt="3D icon" />
               </div>
 
               <h3>3D & Visualisation</h3>
@@ -70,7 +72,7 @@ export const SkillsTree = () => {
             <div className="skillsBoxRight2">
               {/* Zone logo */}
               <div className="skillsBoxIcon">
-                <img src="/icons/users.svg" alt="Collaboration icon" />
+                <img src="team-svgrepo-com.svg" alt="Collaboration icon" />
               </div>
 
               <h3>Collaboration & Méthodologie</h3>
