@@ -16,8 +16,8 @@ const listSkills: Skill[] = [
     imgSrc: 'monitor-svgrepo-com.svg',
     alt: 'Front-end icon',
     title: 'Front-end & UI',
-    text: `Je conçois des interfaces modernes avec React et Next.js, en mettant l'accent sur un design responsive et fluide.
-          Les animations et l'accessibilité font partie de mes priorités pour offrir une expérience utilisateur claire et agréable.`,
+    text: `I design modern interfaces with React and Next.js, focusing on responsive and fluid design. 
+          Animations and accessibility are among my priorities to provide a clear and enjoyable user experience.`,
     side: 'left',
     slot: 1,
   },
@@ -25,8 +25,8 @@ const listSkills: Skill[] = [
     imgSrc: 'database-svgrepo-com.svg',
     alt: 'Back-end icon',
     title: 'Back-end & Data',
-    text: `Je structure et gère des bases relationnelles (PostgreSQL, MySQL) et connecte le front au back via des API.
-              L’utilisation d’ORM comme Prisma me permet de garder un code organisé, robuste et évolutif.`,
+    text: `I structure and manage relational databases (PostgreSQL, MySQL) and connect the front end to the back end through APIs. 
+          Using an ORM like Prisma allows me to keep my code organized, robust, and scalable.`,
     side: 'right',
     slot: 1,
   },
@@ -34,8 +34,8 @@ const listSkills: Skill[] = [
     imgSrc: 'cube-1-svgrepo-com.svg',
     alt: '3D icon',
     title: '3D & Visualisation',
-    text: `Grâce à Three.js et VTKLoader, j’intègre et manipule des modèles 3D interactifs directement dans le navigateur.
-              J’utilise les plans de coupe et la mise en couleur pour rendre les données visuelles plus compréhensibles.`,
+    text: `Thanks to Three.js and VTKLoader, I integrate and manipulate interactive 3D models directly in the browser.
+          I use clipping planes and color mapping to make visual data easier to understand.`,
     side: 'left',
     slot: 2,
   },
@@ -43,8 +43,8 @@ const listSkills: Skill[] = [
     imgSrc: 'team-svgrepo-com.svg',
     alt: 'Collaboration icon',
     title: 'Collaboration & Méthodologie',
-    text: `J’adopte un workflow clair avec GitHub (branches, PR, rebase) et applique une organisation agile pour avancer efficacement en équipe.
-          La communication et le partage de connaissances sont au cœur de ma façon de travailler.`,
+    text: `I adopt a clear workflow with GitHub (branches, PRs, rebases) and apply agile practices to progress efficiently as a team.
+          Communication and knowledge sharing are at the core of the way I work.`,
     side: 'right',
     slot: 2,
   },
