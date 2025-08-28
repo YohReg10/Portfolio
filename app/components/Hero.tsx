@@ -1,6 +1,6 @@
 // Introduction du site
 
-import { Section } from "./Section";
+import { Section } from "./section";
 
 export const Hero = () => {
     return (

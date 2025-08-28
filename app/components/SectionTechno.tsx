@@ -1,12 +1,12 @@
-import { Section } from "./Section";
+import { Section } from "./section";
 
 const listTechno = [
-    {imgSrc : "react_img.svg", alt : "Logo React", name : "React", cercles : 3},
-    {imgSrc : "javascript_img.svg", alt : "Logo JavaScript", name : "JavaScript", cercles : 5},
-    {imgSrc : "mysql_img.svg", alt : "Logo MySQL", name : "MySQL", cercles : 2},
-    {imgSrc : "symfony_img.svg", alt : "Logo Symfony", name : "Symfony", cercles : 1},
+    {imgSrc : "react_img.svg", alt : "Logo React", name : "React", cercles : 6},
+    {imgSrc : "javascript_img.svg", alt : "Logo JavaScript", name : "JavaScript", cercles : 6},
+    {imgSrc : "mysql_img.svg", alt : "Logo MySQL", name : "MySQL", cercles : 4},
+    {imgSrc : "symfony_img.svg", alt : "Logo Symfony", name : "Symfony", cercles : 3},
     {imgSrc : "figma_img.svg", alt : "Logo Figma", name : "Figma", cercles : 6},
-    {imgSrc : "github_img.svg", alt : "Logo Github", name : "Github", cercles : 6}
+    {imgSrc : "github_img.svg", alt : "Logo Github", name : "Github", cercles : 7}
 ];
 
 export const SectionTechno = () => {
@@ -19,19 +19,19 @@ export const SectionTechno = () => {
             </div>
             
             <div className="w-full flex flex-wrap justify-between gap-8">
-        {listTechno.map((techno) => (
-            <div key={techno.name} className="card flex flex-col items-center w-[15%] min-w-[150px]">
-                <img src={techno.imgSrc} alt={techno.alt} className="w-20 h-20" />
-                <h3 className="font-caption text-[20px] dark:text-[#f5f5dc] mb-0">{techno.name}</h3>
-                <p className="font-caption text-[18px] dark:text-[#f5f5dc] mb-0">Projets réalisés :</p>
+                {listTechno.map((techno) => (
+                    <div key={techno.name} className="card flex flex-col items-center w-[15%] min-w-[150px]">
+                        <img src={techno.imgSrc} alt={techno.alt} className="w-20 h-20" />
+                        <h3 className="font-caption text-[20px] dark:text-[#f5f5dc] mb-0">{techno.name}</h3>
+                        <p className="font-caption text-[18px] dark:text-[#f5f5dc] mb-0">Expertise :</p>
 
-                {/* Cercles de compétence */}
-                <div className="flex gap-2 mb-0">
-                    {Array.from({ length: 8 }).map((_, i) => (
-                        <div key={i} className={`h-3 w-3 rounded-full ${i < techno.cercles ? "bg-[#e3ba59]" : "bg-gray-700"}`}></div>
-                    ))}
-                </div>
-            </div>
+                        {/* Cercles de compétence */}
+                        <div className="flex gap-2 mb-0">
+                            {Array.from({ length: 8 }).map((_, i) => (
+                                <div key={i} className={`h-3 w-3 rounded-full ${i < techno.cercles ? "bg-[#e3ba59]" : "bg-gray-700"}`}></div>
+                            ))}
+                        </div>
+                    </div>
             ))}
             </div>
         </Section>

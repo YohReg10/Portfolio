@@ -5,6 +5,7 @@ import { Hero } from "./components/Hero";
 import { Spacing } from "./components/Spacing";
 import { SectionTechno } from "./components/SectionTechno";
 import { SectionProjects } from "./components/SectionProjects";
+import { SkillsTree } from "./components/SkillsTree";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Hero />   
       <SectionTechno /> 
       <SectionProjects />
+      <SkillsTree />
     </main>
   );
 }
