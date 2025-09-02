@@ -52,7 +52,7 @@ const listSkills: Skill[] = [
 
 export const SkillsTree: React.FC = () => {
   return (
-    <Section className="flex flex-col p-5 rounded-lg mt-32 mx-auto w-[92%]">
+    <Section id="skillsTree" className="flex flex-col p-5 rounded-lg mt-32 mx-auto w-[92%]">
       <h1 className="font-serif text-4xl font-bold text-center text-[#e3ba59] dark:text-[#d9b96d]">
         My Skills Tree
       </h1>

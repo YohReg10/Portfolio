@@ -7,6 +7,7 @@ export const Footer: React.FC = () => {
 
   return (
     <Section className="mt-32 px-6 py-12">
+        <div className="mb-20 text-center text-sm border-t-2 border-neutral-800 pt-4"></div>
       <footer aria-label="Site footer" role="contentinfo" className="text-neutral-300">
         {/* Container */}
         <div className="max-w-[1800px] mx-auto grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
@@ -79,7 +80,7 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Bas du footer */}
-        <div className="mt-12 text-center text-sm border-t border-neutral-800 pt-4">
+        <div className="mt-20 text-center text-sm border-t-2 border-neutral-800 pt-4">
           © {year} Yohan Regad – All rights reserved.
         </div>
       </footer>
