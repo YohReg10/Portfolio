@@ -58,7 +58,7 @@ export const Footer: React.FC = () => {
             <h3 className="text-xl font-semibold mb-3 text-[#e3ba59]">Follow me</h3>
             <div className="flex flex-wrap gap-4">
               <a
-                href="https://github.com/ton-profil"
+                href="https://github.com/YohReg10"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
@@ -67,7 +67,7 @@ export const Footer: React.FC = () => {
                 GitHub
               </a>
               <a
-                href="https://linkedin.com/in/ton-profil"
+                href="https://www.linkedin.com/in/yohan-regad-4b44132b5/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
