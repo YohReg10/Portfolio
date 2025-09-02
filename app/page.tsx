@@ -6,6 +6,7 @@ import { Spacing } from "./components/Spacing";
 import { SectionTechno } from "./components/SectionTechno";
 import { SectionProjects } from "./components/SectionProjects";
 import { SkillsTree } from "./components/SkillsTree";
+import { Footer } from "./components/footer";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <SectionTechno /> 
       <SectionProjects />
       <SkillsTree />
+      <Footer />
     </main>
-  );
+  )
 }

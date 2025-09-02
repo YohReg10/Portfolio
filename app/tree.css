@@ -6,6 +6,7 @@
   justify-content: center;
   align-items: flex-start;
   height: auto;
+  min-height: 1400px; /* ajuste selon la taille de ton arbre */
 }
 
 .skillsTreeContainer {
