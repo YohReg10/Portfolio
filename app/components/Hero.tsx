@@ -4,7 +4,7 @@ import { Section } from "./section";
 
 export const Hero = () => {
     return (
-        <Section className="flex justify-between items-start max-lg:flex-col mt-20 mx-auto" aria-labelledby="hero-title">
+        <Section id="about" className="flex justify-between items-start max-lg:flex-col mt-20 mx-auto" aria-labelledby="hero-title">
             <div className="flex-[2] ml-20">
                 <h1 id="hero-title" className="font-caption text-4xl font-bold text-[#e3ba59] dark:text-[#d9b96d]">Yohan Regad</h1>
                 <h2 className="font-caption text-3xl font-bold dark:text-[#f5f5dc]">Student Web Developer</h2>

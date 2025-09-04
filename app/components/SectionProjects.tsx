@@ -39,7 +39,7 @@ const listProjects = [
 
 export const SectionProjects = () => {
     return (
-        <Section className="flex flex-col gap-12 p-5 rounded-lg mt-32 mx-auto w-[92%]">
+        <Section id="projects" className="flex flex-col gap-12 p-5 rounded-lg mt-32 mx-auto w-[92%]">
             <h1 className=" font-serif text-4xl font-bold text-center text-[#e3ba59] dark:text-[#d9b96d] mb-20">
             My Projects
             </h1>

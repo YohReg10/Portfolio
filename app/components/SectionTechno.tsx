@@ -11,7 +11,7 @@ const listTechno = [
 
 export const SectionTechno = () => {
     return (
-        <Section className="flex flex-wrap gap-8 p-5 rounded-lg mt-32 mx-auto w-[92.5%] justify-center">
+        <Section id="technos" className="flex flex-wrap gap-8 p-5 rounded-lg mt-32 mx-auto w-[92.5%] justify-center">
             <div className="w-full text-center">
                 <h1 className="font-serif text-4xl font-bold text-[#e3ba59] dark:text-[#d9b96d] mb-20">
                     My Technologies

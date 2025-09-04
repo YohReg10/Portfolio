@@ -26,7 +26,7 @@ export const Header = () => {
             <GithubIcon size={12} className="text-foreground" />
           </Link>
           <Link
-            href="https://www.linkedin.com/feed/"
+            href="https://www.linkedin.com/in/yohan-regad-4b44132b5/"
             className={cn(
               buttonVariants({ variant: "outline" }),
               "size-6 p-0 border border-[#d9b96d]"
