@@ -8,11 +8,11 @@ export const Footer: React.FC = () => {
   const year = new Date().getFullYear();
 
   return (
-    <Section className="mt-32 px-6 py-12">
+    <Section className="px-6 py-12">
         <footer
             aria-label="Site footer"
             role="contentinfo"
-            className="text-neutral-300 mb-20 text-center text-sm border-t-2 border-[#e3ba59]/20  dark:border-[#e3ba59]/30 pt-16"
+            className="text-neutral-300 text-center text-sm border-t-2 border-[#e3ba59]/20  dark:border-[#e3ba59]/30 pt-16"
         >
 
             {/* Container */}
