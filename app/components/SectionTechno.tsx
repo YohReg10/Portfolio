@@ -4,7 +4,7 @@ const listTechno = [
     {imgSrc : "react_img.svg", alt : "Logo React", name : "React", cercles : 6},
     {imgSrc : "javascript_img.svg", alt : "Logo JavaScript", name : "JavaScript", cercles : 6},
     {imgSrc : "mysql_img.svg", alt : "Logo MySQL", name : "MySQL", cercles : 4},
-    {imgSrc : "symfony_img.svg", alt : "Logo Symfony", name : "Symfony", cercles : 3},
+    // {imgSrc : "symfony_img.svg", alt : "Logo Symfony", name : "Symfony", cercles : 3},
     {imgSrc : "figma_img.svg", alt : "Logo Figma", name : "Figma", cercles : 6},
     {imgSrc : "github_img.svg", alt : "Logo Github", name : "Github", cercles : 7}
 ];
