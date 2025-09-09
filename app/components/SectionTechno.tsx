@@ -1,4 +1,5 @@
 import { Section } from "./section";
+import '../cards.css';
 
 const listTechno = [
   { imgSrc: "react_img.svg", alt: "Logo React", name: "React", cercles: 6 },
