@@ -1,5 +1,8 @@
+"use client";
+
 import { Section } from "./section";
 import '../cards.css';
+import React, { useEffect } from "react";
 
 const listTechno = [
   { imgSrc: "react_img.svg", alt: "Logo React", name: "React", cercles: 6 },
@@ -10,6 +13,60 @@ const listTechno = [
 ];
 
 export const SectionTechno = () => {
+  useEffect(() => {
+    const html = document.documentElement;
+    const body = document.body;
+
+    // Sauvegarde des styles existants
+    const prev = {
+      htmlOverflowX: html.style.overflowX,
+      bodyOverflowX: body.style.overflowX,
+      htmlOverscrollX: (html.style as any).overscrollBehaviorX,
+      bodyOverscrollX: (body.style as any).overscrollBehaviorX,
+    };
+
+    // Verrou X global
+    html.style.overflowX = "hidden";
+    body.style.overflowX = "hidden";
+    (html.style as any).overscrollBehaviorX = "none";
+    (body.style as any).overscrollBehaviorX = "none";
+
+    // Bloque le drag horizontal (tactile)
+    let startX = 0, startY = 0;
+    const onTouchStart = (e: TouchEvent) => {
+      const t = e.touches[0];
+      if (!t) return;
+      startX = t.clientX;
+      startY = t.clientY;
+    };
+    const onTouchMove = (e: TouchEvent) => {
+      const t = e.touches[0];
+      if (!t) return;
+      const dx = Math.abs(t.clientX - startX);
+      const dy = Math.abs(t.clientY - startY);
+      if (dx > dy) e.preventDefault(); // si geste principalement horizontal → on bloque
+    };
+
+    // Bloque le scroll latéral au trackpad/roulette
+    const onWheel = (e: WheelEvent) => {
+      if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) e.preventDefault();
+    };
+
+    document.addEventListener("touchstart", onTouchStart, { passive: false });
+    document.addEventListener("touchmove", onTouchMove, { passive: false });
+    window.addEventListener("wheel", onWheel, { passive: false });
+
+    return () => {
+      document.removeEventListener("touchstart", onTouchStart as any);
+      document.removeEventListener("touchmove", onTouchMove as any);
+      window.removeEventListener("wheel", onWheel as any);
+      html.style.overflowX = prev.htmlOverflowX;
+      body.style.overflowX = prev.bodyOverflowX;
+      (html.style as any).overscrollBehaviorX = prev.htmlOverscrollX;
+      (body.style as any).overscrollBehaviorX = prev.bodyOverscrollX;
+    };
+  }, []);
+
   return (
     <Section id="technos" className="flex flex-col gap-8 p-5 rounded-lg mt-32 mx-auto w-[92.5%]">
       {/* Titre */}
