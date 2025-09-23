@@ -96,7 +96,7 @@ export const SectionTechno = () => {
         <div className="hidden lg:flex flex-wrap justify-between gap-8">
           {listTechno.map((techno) => (
             <div key={techno.name} className="card flex flex-col items-center w-[15%] min-w-[150px]">
-              <img src={techno.imgSrc} alt={techno.alt} className="w-20 h-20" />
+              <img src={techno.imgSrc} alt={techno.alt} className="w-18 h-18" />
               <h3 className="font-caption text-[20px] dark:text-[#f5f5dc] mb-0">{techno.name}</h3>
               <p className="font-caption text-[18px] dark:text-[#f5f5dc] mb-0">Expertise :</p>
               <div className="flex gap-2 mb-0">

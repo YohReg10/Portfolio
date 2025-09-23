@@ -46,7 +46,6 @@ export const SectionProjects = () => {
       <h1 className="font-serif text-3xl md:text-4xl font-bold text-center text-[#e3ba59] dark:text-[#d9b96d] mb-10 md:mb-16 lg:mb-20">
         My Projects
       </h1>
-
       {listProjects.map((projects) => (
         <div
           key={projects.href}
@@ -58,63 +57,53 @@ export const SectionProjects = () => {
               <img
                 src={projects.imgSrc}
                 alt={projects.alt}
-                className="
+                className={`
                   object-cover rounded-2xl md:rounded-3xl border-2 border-[#e3ba59]
                   hover:opacity-90 transition-opacity mx-auto
-
                   /* iPhone 12 Pro (base) */
-                  w-[340px] h-[227px]
-
+                  w-[280px] h-[180px]
                   /* iPad >= 768px */
-                  md:w-[480px] md:h-[320px]
-
-                  /* Desktop (inchangé) */
-                  lg:w-[575px] lg:h-[382px]
-                "
+                  md:w-[390px] md:h-[290px]
+                  /* Desktop */
+                  lg:!w-[500px] lg:!h-[400px]
+                  /* 1440x900 */
+                  xl:w-[460px] xl:h-[300px]
+                `}
                 loading="lazy"
               />
-
               {projects.status === "in production" && (
                 <div className="absolute top-0 left-0 bg-red-500 text-white px-2 py-1 text-xs sm:text-sm font-serif rounded-tr-lg rounded-bl-lg">
                   In production
                 </div>
               )}
-
               {/* Bouton overlay */}
               <a
                 href={projects.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="absolute inset-x-2 md:inset-x-3 lg:inset-x-4
+                className={`
+                  absolute inset-x-2 md:inset-x-3 lg:inset-x-4
                   bottom-2 md:bottom-0 lg:-bottom-1
+                  xl:inset-x-2 xl:padding-1
                   bg-[#e3ba59] text-[#333333] dark:text-[#f5f5dc]
                   text-center font-serif font-medium
                   px-3 py-1.5 sm:px-4 sm:py-2 md:px-5 md:py-2.5
                   text-xs sm:text-sm md:text-base lg:text-lg
-                  rounded-lg md:rounded-xl lg:rounded-2xl shadow"
+                  rounded-lg md:rounded-xl lg:rounded-2xl shadow
+                `}
               >
                 👀 View Github
               </a>
-
               {/* Espace de sécurité pour le bouton */}
               <div className="h-10 md:h-12" />
             </div>
           </div>
-
-          {/* TEXTE */}
-          <div
-            className="
-              w-full lg:w-2/4 lg:mr-24
-              text-center lg:text-left
-              mt-2 md:mt-3 lg:mt-0
-            "
-          >
+          {/* TEXTE (inchangé) */}
+          <div className="w-full lg:w-2/4 lg:mr-24 text-center lg:text-left mt-2 md:mt-3 lg:mt-0">
             <div className="mx-auto lg:mx-0 max-w-[340px] md:max-w-[480px] lg:max-w-none">
               <h2 className="font-serif font-bold text-2xl md:text-3xl mb-3 text-[#e3ba59] dark:text-[#d9b96d]">
                 {projects.textTechno}
               </h2>
-
-              {/* Desktop */}
               <p className="font-serif text-base md:text-lg lg:text-xl leading-relaxed mb-4 text-[#333333] dark:text-[#e0e0e0]">
                 {projects.textDescription}
               </p>
@@ -125,7 +114,6 @@ export const SectionProjects = () => {
           </div>
         </div>
       ))}
-
       <div className="text-center mt-2 md:mt-4">
         <Link
           href="/more-projects"

@@ -2,12 +2,20 @@ import { Section } from "./section";
 
 export const Hero = () => {
     return (
-        <Section id="about" className="flex flex-col lg:flex-row justify-between items-start max-lg:flex-col mt-12 lg:mt-20 mx-auto" aria-labelledby="hero-title">
+        <Section id="about" className="flex flex-col lg:flex-row justify-between items-start max-lg:flex-col mt-12 lg:mt-20 mx-auto"
+            aria-labelledby="hero-title">
+
             {/* Image en haut sur mobile/iPad */}
             <div className="flex justify-center w-full lg:hidden mb-6">
                 <img
                     src="yohan_noir_blanc_bis2024.jpg"
-                    className="h-auto rounded-3xl border-2 border-[#e3ba59] w-[60%] max-w-xs"
+                    className="
+                        h-auto rounded-3xl border-2 border-[#e3ba59]
+                        /* Mobile (par défaut) */
+                        w-[75%]
+                        /* iPad (>= 768px) */
+                        md:w-[44%]  
+                    "
                     alt="Yohan's portrait in black and white with a confident smile"
                 />
             </div>
@@ -53,8 +61,19 @@ export const Hero = () => {
             <div className="hidden lg:flex flex-1 mt-0">
                 <img
                     src="yohan_noir_blanc_bis2024.jpg"
-                    className="h-auto rounded-3xl border-2 border-[#e3ba59] w-[75%]"
                     alt="Yohan's portrait in black and white with a confident smile"
+                    className="
+                         h-auto rounded-3xl border-2 border-[#e3ba59]
+
+                        /* tailles desktop génériques */
+                        lg:w-[68%]
+                        xl:w-[60%]
+                        2xl:w-[75%]
+                        max-w-[680px]
+
+                        /* MacBook Pro-like (inclut 1440×900) */
+                        min-[1366px]:max-[1536px]:!w-[85%]
+                    "
                 />
             </div>
         </Section>
