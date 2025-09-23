@@ -43,12 +43,12 @@ export const Footer: React.FC = () => {
           className={[
             "max-w-[1800px] mx-auto grid grid-cols-1 gap-8 items-center",
             "max-[390px]:px-4 max-[390px]:gap-6",
-            "md:grid-cols-[1.25fr_1fr_1fr_auto] md:gap-8 md:px-6 md:items-start md:text-left",
-            "lg:grid-cols-[1.5fr_1fr_98px_1fr_1fr] lg:pl-24"
+            "md:grid-cols-[1.25fr_1fr_auto_1fr_1fr] md:auto-rows-min md:gap-x-8 md:gap-y-0 md:px-6 md:items-start md:text-left",
+            "lg:grid-cols-[1.10fr_1fr_98px_1fr_1fr] lg:pl-24"
           ].join(" ")}
         >
           {/* Identité */}
-          <div className="flex flex-col items-center md:items-start md:max-w-[420px] md:pr-6">
+          <div className="flex flex-col items-center md:items-start md:col-start-1 md:max-w-[420px] md:pr-6">
             <h2 className="font-serif font-bold text-[#e3ba59] -mt-0.5 text-2xl md:text-2xl lg:text-3xl">
               Yohan Regad
             </h2>
@@ -58,7 +58,7 @@ export const Footer: React.FC = () => {
           </div>
 
           {/* Navigation */}
-          <nav aria-label="Footer navigation" className="flex flex-col items-center md:items-start md:pr-8">
+          <nav aria-label="Footer navigation" className="flex flex-col items-center md:items-start md:col-start-2 md:pr-8 lg:ml-16">
             <h3 className="font-serif font-semibold mb-3 text-[#e3ba59] text-lg md:text-lg lg:text-xl">
               Navigation
             </h3>
@@ -93,8 +93,8 @@ export const Footer: React.FC = () => {
           {/* Séparateur vertical */}
           <div className="hidden md:block w-[2px] h-full bg-[#e3ba59]/20 dark:bg-[#e3ba59]/30 absolute left-[calc(1.25fr+1rem)] top-0 bottom-0 md:relative md:left-auto md:ml-0 md:mr-4" />
           {/* Contact */}
-          <div className="flex flex-col items-center md:items-start md:pr-4 lg:pr-20">
-            <h3 className="font-serif font-semibold mb-3 text-[#e3ba59] text-lg md:text-lg lg:text-xl">
+          <div className="flex flex-col items-center md:items-start md:col-start-4 md:pr-4 lg:pr-20 lg:ml-16">
+                <h3 className="font-serif font-semibold mb-3 text-[#e3ba59] text-lg md:text-lg lg:text-xl">
               Contact
             </h3>
             <ul className="list-none p-0 m-0 space-y-2">
@@ -118,7 +118,7 @@ export const Footer: React.FC = () => {
           </div>
 
           {/* Réseaux sociaux */}
-          <div className="flex flex-col items-center md:items-start lg:pl-14">
+          <div className="flex flex-col items-center md:items-start md:col-start-5 md:row-start-1 md:self-start md:mt-0 lg:col-start-auto lg:row-start-auto lg:pl-14 lg:ml-16">
             <h3 className="font-serif font-semibold mb-3 text-[#e3ba59] text-lg md:text-lg lg:text-xl">
               Follow me
             </h3>
