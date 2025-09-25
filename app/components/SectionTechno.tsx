@@ -2,7 +2,7 @@
 
 import React from "react";
 import NoXScroll from "../NoXScroll";
-import { Section } from "./Section";
+import { Section } from "./section";
 import '../cards.css';
 
 const listTechno = [
