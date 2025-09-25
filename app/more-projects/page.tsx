@@ -1,7 +1,7 @@
 // MoreProjects.tsx
 
 import Link from "next/link";
-import { Section } from "../components/Section"; // Make sure to use the default import
+import { Section } from "../components/section";
 
 const MoreProjects = () => {
   return (

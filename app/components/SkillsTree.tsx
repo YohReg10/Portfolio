@@ -1,6 +1,6 @@
 import React from 'react';
 import '../tree.css';
-import { Section } from './Section';
+import { Section } from './section';
 
 type Skill = {
   imgSrc: string;
