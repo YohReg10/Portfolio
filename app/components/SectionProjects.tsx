@@ -7,7 +7,7 @@ const listProjects = [
     alt: "Stage in DigiSurge",
     textTechno: "Made with Three.js 🎲, WebGL/OpenGL ⚡, JavaScript 💪 and lil-gui 🎛️",
     textDescription: "3-month internship at DigiSurge: development of a 3D medical viewer for beating heart models using Three.js, WebGL, and advanced visualization techniques (clipping planes, LUT, barycenter scaling, camera reset).",
-    textAll: "✨ Built as part of a collaborative project with a strong focus on interactive 3D visualization, testing, and teamwork in a medical research context. 👽",
+    textAll: "✨ Built as part of a collaborative project with a strong focus on interactive 3D visualization, testing, and teamwork in a medical research context, not available publicly due to company policy 👽",
     status: "Internship completed",
   },
   {
