@@ -33,10 +33,9 @@ export const Hero = () => {
                         I love crafting modern, fluid, and responsive interfaces with React and Next.js, while keeping accessibility and design in mind.
                     </p>
                     <p>
-                        At the same time, I enjoy challenging myself on back-end development. Managing data, building APIs,
-                    </p>
-                    <p>
+                        At the same time, I enjoy challenging myself on back-end development. Managing data, building APIs
                         and exploring architectures give me the opportunity to strengthen my versatility and push my skills further.
+
                     </p>
                     <p>
                         I’m curious, determined, and a sunny person who loves to joke every day 😅

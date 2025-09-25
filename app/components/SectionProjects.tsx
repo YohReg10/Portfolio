@@ -3,6 +3,22 @@ import { Section } from "./section";
 
 const listProjects = [
   {
+    imgSrc: "digisurge3.png",
+    alt: "Stage in DigiSurge",
+    textTechno: "Made with Three.js 🎲, WebGL/OpenGL ⚡, JavaScript 💪 and lil-gui 🎛️",
+    textDescription: "3-month internship at DigiSurge: development of a 3D medical viewer for beating heart models using Three.js, WebGL, and advanced visualization techniques (clipping planes, LUT, barycenter scaling, camera reset).",
+    textAll: "✨ Built as part of a collaborative project with a strong focus on interactive 3D visualization, testing, and teamwork in a medical research context. 👽",
+    status: "Internship completed",
+  },
+  {
+    imgSrc: "wo_system.svg",
+    alt: "Stage in Wo System",
+    textTechno: "Made with React/NextJS ⚛️, Tailwind CSS 🎨 and Figma",
+    textDescription: "2-month internship at Wo-System: development of a front-end e-commerce application (MedSkin peeling products) using React, Next.js, Tailwind CSS, and TypeScript.",
+    textAll: "✨ Internship project highlighting responsive front-end skills, not available publicly due to company policy.",
+    status: "Internship completed",
+  },
+  {
     imgSrc: "Portfolio-Desk-620x410.jpg",
     alt: "Yohan's portfolio preview",
     href: "https://github.com/YohReg10/Portfolio",
@@ -48,7 +64,7 @@ export const SectionProjects = () => {
       </h1>
       {listProjects.map((projects) => (
         <div
-          key={projects.href}
+          key={projects.href ?? projects.alt}
           className="flex flex-col items-center lg:flex-row lg:items-center gap-6 md:gap-8 lg:gap-10"
         >
           {/* IMAGE (col gauche) */}
@@ -77,6 +93,7 @@ export const SectionProjects = () => {
                 </div>
               )}
               {/* Bouton overlay */}
+              {projects.href && (
               <a
                 href={projects.href}
                 target="_blank"
@@ -92,8 +109,9 @@ export const SectionProjects = () => {
                   rounded-lg md:rounded-xl lg:rounded-2xl shadow
                 `}
               >
-                👀 View Github
+                👀 View Github              
               </a>
+            )}
               {/* Espace de sécurité pour le bouton */}
               <div className="h-10 md:h-12" />
             </div>
