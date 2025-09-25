@@ -3,6 +3,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { GeistSans } from "geist/font/sans";
 import { Junge } from "next/font/google";
 import {  ThemeProviderWrapper  } from "./components/ThemeProviderWrapper";
 
