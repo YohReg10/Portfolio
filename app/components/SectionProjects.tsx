@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Section } from "./section";
+import { Section } from "./Section";
 
 const listProjects = [
   {
