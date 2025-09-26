@@ -52,7 +52,7 @@ export const Hero = () => {
                     <li>🕹️ Video games</li>
                 </ul>
                 <blockquote className="font-serif text-base lg:text-lg italic mt-4 block text-[#e3ba59] dark:text-[#d9b96d]" aria-label="Japanese proverb">
-                    "When you think you can't, try once more." - Japanese proverb 🍀
+                    {`"When you think you can't, try once more." - Japanese proverb 🍀`}
                 </blockquote>
             </div>
 
